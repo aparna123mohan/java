@@ -1,0 +1,47 @@
+sjcet@Z238-UL:~/aparnamohan/S2/java$ git init
+Initialized empty Git repository in /home/sjcet/aparnamohan/S2/java/.git/
+sjcet@Z238-UL:~/aparnamohan/S2/java$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Demo.class
+	Demo.java
+	j1.png
+	product.class
+	product.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+sjcet@Z238-UL:~/aparnamohan/S2/java$ git add product.java
+sjcet@Z238-UL:~/aparnamohan/S2/java$ git commit -m "first program"
+[master (root-commit) 0fcba62] first program
+ 1 file changed, 60 insertions(+)
+ create mode 100644 product.java
+sjcet@Z238-UL:~/aparnamohan/S2/java$ git remote add java https://github.com/aparna123mohan/java.git
+sjcet@Z238-UL:~/aparnamohan/S2/java$ git push java
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream java master
+
+sjcet@Z238-UL:~/aparnamohan/S2/java$ git push --set-upstream java master
+Username for 'https://github.com': aparna123mohan
+Password for 'https://aparna123mohan@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 615 bytes | 615.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/aparna123mohan/java/pull/new/master
+remote: 
+To https://github.com/aparna123mohan/java.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'java'.
+sjcet@Z238-UL:~/aparnamohan/S2/java$ 
+
+
